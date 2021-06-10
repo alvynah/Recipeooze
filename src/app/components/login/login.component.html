@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 form-group" id="login">
+            <h2 class="text-center">Login</h2>
+            <hr>
+            <div id="login-forms">
+                <label for="username">Enter Username:</label><br>
+                <input [(ngModel)]="input.username" class="form-control" required><br>
+                <label for="password">Enter Password:</label><br>
+                <input [(ngModel)]="input.password" type="password" class="form-control" required><br>
+                <button (click)=loginUser() class="btn btn-block btn-danger">Login</button>
+                <br>
+                <div>
+                    <p><a routerLink="/registration">No Acount? Create an Account Here</a></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+</div>
